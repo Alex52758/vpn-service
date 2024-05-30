@@ -27,7 +27,7 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/yourusername/yourrepository.git
+   git clone https://github.com/Alex52758/vpn-service.git
 Перейдите в каталог проекта:
 
 cd yourrepository
@@ -41,7 +41,7 @@ go build -o client.exe Client_windows.go
 Настройка клиента (Linux)
 Клонируйте репозиторий:
 
-git clone https://github.com/yourusername/yourrepository.git
+git clone https://github.com/Alex52758/vpn-service.git
 Перейдите в каталог проекта:
 
 cd yourrepository
