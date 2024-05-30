@@ -35,7 +35,6 @@ var (
 	db                *sql.DB
 	mux               *http.ServeMux
 	currentAllowedIPs []string
-	encryptedPassword = "encryptedPasswordFromDB" // Это зашифрованный пароль
 	expectedIP        = "10.0.0.3"
 	serverPublicKey   = "G5yLhW7MASCFF866wSXkDxj9l/Nw3X1zgNn+AVMeaQQ="
 )
@@ -176,7 +175,7 @@ func getMessages(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
-	defer rows.Close() // Гарантия закрытия соединения по завершении функции
+	defer rows.Close() //  закрытие соединения по завершении функции
 
 	var messages []Message // Список для хранения сообщений
 	for rows.Next() {
